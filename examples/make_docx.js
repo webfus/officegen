@@ -33,6 +33,11 @@ pObj.addText ( 'officegen 0.2.12', { back: '00ffff', shdType: 'pct12', shdColor:
 pObj.addText ( ' you can do ' );
 pObj.addText ( 'more cool ', { highlight: true } ); // Highlight!
 pObj.addText ( 'stuff!', { highlight: 'darkGreen' } ); // Different highlight color.
+pObj.options.border = {
+	top: { val: 'single', sz: 2 },
+	bottom: { val: 'single', sz: 2 },
+	left: { val: 'single', sz: 16, space: 36, color: 'FF0000' },
+};
 
 var pObj = docx.createP ();
 
